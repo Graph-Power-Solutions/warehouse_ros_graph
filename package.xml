@@ -1,23 +1,16 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
     <name>warehouse_ros_graph</name>
     <version>0.0.1</version>
-    <description>
-        Implementation of warehouse_ros for graph databases
-    </description>
-    <author email="dev@graph-power.com">Alex Kumundzhiev</author>
+    <description> Implementation of warehouse_ros for graph databases </description>
     <maintainer email="dev@graph-power.com">Graph Power</maintainer>
 
     <license>Apache 2.0</license>
-    <url>http://ros.org/wiki/warehouse_ros</url>
 
-    <buildtool_depend>catkin</buildtool_depend>
-
-    <build_depend>mgclient</build_depend>
+    <buildtool_depend>ament_cmake</buildtool_depend>
 
     <depend>warehouse_ros</depend>
-
-    <test_depend>rostest</test_depend>
-    <test_depend>memgraph</test_depend>
 
     <export>
         <warehouse_ros plugin="${prefix}/graph_database_connection_plugin_description.xml" />
